@@ -47,3 +47,21 @@ if is_prime:
 
 print()
 
+# === Challenge 3: Multiplication Table ===
+print("=== Challenge 3: Multiplication Table ===")
+print("Multiplication Table:")
+
+print("  ", end="")
+for i in range(1, 11):
+    print(f"{i:4}", end="")
+print()
+
+for row_num in range(1, 11):
+
+    print(f"{row_num:2}", end=" ")
+    print()
+    print("   ", end="")
+
+    for col_num in range(1, 11):
+        product = row_num * col_num
+        print(f"{product:4}", end="")
